@@ -1,8 +1,3 @@
-# Fancy Weather
-
- *http://localhost:8080/*
-
-https://zanchess-fancy-weather.netlify.app/
  # Fancy Weather
  
 [Deploy link](https://zanchess-fancy-weather.netlify.app/)
