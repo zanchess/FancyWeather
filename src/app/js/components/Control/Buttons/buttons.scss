@@ -1,0 +1,147 @@
+.control__btns{
+	width: 400px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.active{
+	background-color: #cfcfcf92;
+}
+
+.control-btns{
+
+	&__themes {
+		height: 50px;
+		width: 50px;
+		border-radius: 5px;
+		border: 3px solid grey;
+		color: white;
+		transition: all 0.3s ease;
+		cursor: pointer;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 24px;
+
+
+		&:hover {
+			background-color: #cfcfcf92;
+			color: rgb(241, 179, 172);
+			
+		}
+	}
+
+	&__change-img{ 
+		color: white;
+		border-radius: 5px;
+		cursor: pointer;
+		height: 60px;
+		width: 60px;
+		box-sizing: border-box;
+		background-repeat: no-repeat;
+		background-color: #00000092;
+		background-position: center bottom;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: background 0.3s ease;
+		user-select: none;
+
+		&:hover{
+			background-color: #50505092;
+		}
+
+		
+	}
+
+	&__spinner{
+		height: 30px;
+		width: 30px;
+		border-radius: 5px;
+	}
+
+	&__degrees{
+		width: 100px;
+		height: 59px;
+		display: flex;
+		color: white;
+		border-radius: 9px;
+		background-color: #00000092;
+		font-size: 26px;
+	}
+
+	&__C{
+		border-radius: 8px 0 0 8px;
+		width: 25px;
+		width: 50px;
+		box-sizing: border-box;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: background 0.3s ease;
+		border-left: 3px solid grey;
+		border-top: 3px solid grey;
+		border-bottom: 3px solid grey;
+
+		&:hover{
+			background-color: #cfcfcf92;
+		}
+	}
+
+	&__F{
+		width: 51px;
+		box-sizing: border-box;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: background 0.3s ease;
+		border-radius: 0 8px 8px 0;
+		border-right: 3px solid grey;
+		border-top: 3px solid grey;
+		border-bottom: 3px solid grey;
+		
+		&:hover{
+			background-color: #cfcfcf92;
+			
+		}
+		}	
+	
+	&__change-lang{
+		height: 60px;
+		width: 80px;
+		border: none;
+		font-size: 26px;
+		border: 3px solid grey ;
+		background-color: #00000092;
+		color: white;
+		border-radius: 5px;
+
+		&:focus{
+			outline: none;
+		}
+		& option{
+			font-size: 26px;
+		}
+	}
+
+}
+
+@media screen and (max-width: 450px){
+	.control__btns{
+		width: 100%;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	.control-btns{
+
+		&__themes {
+			display: none;
+		}
+	
+}
+}

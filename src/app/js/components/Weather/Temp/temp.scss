@@ -1,0 +1,35 @@
+.weather{
+	&__temp-value{
+		color: white;
+		font-size: 150px;
+		font-weight: 900;
+	}
+
+	& h4{
+		color: white;
+		font-size: 26px;
+	}
+
+	&__img-wrap{
+		background-repeat: no-repeat;
+		height: 200px;
+	}
+}
+
+@media screen and (max-width: 1550px){
+	.weather{
+		&__temp-value{
+			font-size: 90px;
+		}
+
+		&__img-wrap{
+			background-repeat: no-repeat;
+			height: 150px;
+		}
+
+		& h4{
+			color: white;
+			font-size: 20px;
+		}
+	}
+}

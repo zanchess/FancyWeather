@@ -1,0 +1,17 @@
+export const control = 'control';
+export const controlBtns = 'control-btns';
+export const controlSearch = 'control-search';
+export const weather = 'weather';
+export const content = 'content';
+export const location = 'location';
+export const forecast = 'forecast';
+export const search = 'search';
+export const RU = 'ru';
+export const ENG = 'en';
+export const BE = 'be';
+export const celsius = 'C';
+export const farenheit = 'F';
+export const error = 'error';
+export const active = 'active';
+export const degrees = 'degrees';
+export const empty = 'empty';

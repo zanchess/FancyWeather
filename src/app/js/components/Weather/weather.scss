@@ -1,0 +1,70 @@
+.weather{
+	width: 600px;
+	font-family: 'Rubik Mono One', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #00000092;
+	padding: 50px 50px;
+	border-radius: 20px;
+
+	&__forecast-wrap{
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	&__temp-value{
+		margin-top: -45px;
+		text-align: center;
+	}
+
+	&__img-wrap{
+		margin-left: 50px;
+	}
+
+}
+@media screen and (max-width: 1550px){
+	.weather{
+		padding: 25px 20px;
+		width: 500px;
+	}
+}
+
+@media screen and (max-width: 600px){
+	.weather{
+		width: 400px;
+		padding: 20px 0;
+
+		&__temp-value{
+			font-size: 100px;
+		}
+
+		&__forecast-wrap{
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+}
+
+@media screen and (max-width: 450px){
+	.weather{
+		width: 100%;
+		padding: 20px 0;
+		border-radius: 0px;
+
+		&__temp-value{
+			font-size: 100px;
+		}
+
+		&__forecast-wrap{
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+}
+
+.white{
+	background-color: #ffffff32;
+}
