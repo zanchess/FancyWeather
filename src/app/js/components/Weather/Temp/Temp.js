@@ -69,9 +69,7 @@ class Temp {
 
   getWeatherIconLink() {
     this.sunsetArr[0] === '00' ? this.sunsetArr[0] = '24' : this.sunsetArr[0];
-    this.sunsetArr[0] === '00' ? this.sunsetArr[0] = '24' : this.sunsetArr[0];
-
-    if (this.currentTime[0] > this.sunriseArr[0] && this.currentTime[0] < this.sunsetArr[0]) {
+    if (+this.currentTime[0] > +this.sunriseArr[0] && +this.currentTime[0] < +this.sunsetArr[0]) {
       this.imgLink = this.weatherImgs[weathIcons[this.data[0].weather.code].iconDaySrc].default;
     } else {
       this.imgLink = this.weatherImgs[weathIcons[this.data[0].weather.code].iconNightSrc].default;
